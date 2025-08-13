@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/D:/pra/OrangeHrmDemo/Feature/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:Feature/pm.feature");
 formatter.feature({
-  "name": "Login With OrangeHrm",
+  "name": "PM Details",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Successful Login with OrangeHrmDemo",
+  "name": "Add Employee Details",
   "description": "",
   "keyword": "Scenario"
 });
@@ -60,31 +60,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click on profile link",
-  "keyword": "When "
+  "name": "User Clicks on PM link",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefs.click_on_profile_link()"
+  "location": "MyStepdefs.user_Clicks_on_PM_link()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click on Log out link",
-  "keyword": "When "
+  "name": "User Clicks on Add Employee link",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefs.userClickOnLogOutLink()"
+  "location": "MyStepdefs.user_Clicks_on_Add_Employee_link()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Page Title should be \"OrangeHRM\"",
-  "keyword": "Then "
+  "name": "User enters Employee Details",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefs.pageTitleShouldBe(String)"
+  "location": "MyStepdefs.user_enters_Employee_Details()"
 });
 formatter.result({
   "status": "passed"

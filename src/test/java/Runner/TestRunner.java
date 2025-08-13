@@ -1,13 +1,12 @@
 package Runner;
 
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-
-@CucumberOptions(features ="D:\\pra\\OrangeHrmDemo\\Feature\\login.feature",
+//D:\pra\OrangeHrmDemo\Feature\pm.feature
+@CucumberOptions(features =".//Feature/pm.feature",
         glue= "stepDefinitions",
         dryRun=false,
         monochrome=true,
@@ -16,9 +15,7 @@ import org.junit.runner.RunWith;
         }
 )
 
-public class TestRunner {
-
-
+public class TestRunner{
 
 }
 
