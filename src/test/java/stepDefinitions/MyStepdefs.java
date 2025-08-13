@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageObjects.LoginPage;
-import pageObjects.PMPage;
+
 import pageObjects.myInfoPage;
 
 public class MyStepdefs {
@@ -14,7 +14,6 @@ public class MyStepdefs {
     WebDriver driver;
     LoginPage loginPage;
     myInfoPage infoPage;
-    PMPage pmPage;
 
 
     @Given("User Launch Chrome browser")
@@ -88,9 +87,9 @@ public class MyStepdefs {
 
     @And("User enters Personal Details")
     public void user_enters_Personal_Details() {
-        infoPage.setFirstName("Don");
-        infoPage.setMiddleName("kalyan");
-        infoPage.setLastName("ch");
+        infoPage.setFirstName("Rajuty");
+        infoPage.setMiddleName("kumar");
+        infoPage.setLastName("k");
 
     }
 
@@ -106,44 +105,6 @@ public class MyStepdefs {
 
         Assert.assertEquals(message, driver.getTitle());
         System.out.println("User is able to see the message: " + message);
-    }
-
-    //Add Employee In PM Module
-    @Then("User Clicks on PM link")
-    public void user_Clicks_on_PM_link() throws InterruptedException {
-        pmPage=new PMPage(driver);
-        pmPage.setclickPM();
-        Thread.sleep(5000);
-    }
-
-    @Then("User Clicks on Add Employee link")
-    public void user_Clicks_on_Add_Employee_link()
-    {
-        pmPage.setAddEmployee();
-
-    }
-
-    @Then("User enters Employee Details")
-    public void user_enters_Employee_Details()
-    {
-        pmPage.setFirstName("Surajith");
-        pmPage.setMiddleName("kiran");
-        pmPage.setLastName("sk");
-        pmPage.setEmployeeId("12345");
-        pmPage.setCreateLoginDetails();
-
-    }
-
-    @When("User Clicks on Save button")
-    public void user_Clicks_on_Save_button() {
-
-
-    }
-
-    @Then("User should see {string} Employee")
-    public void user_should_see_Employee(String string) {
-
-
     }
 
 
