@@ -1,5 +1,6 @@
 Feature:  MyInfo Details
 
+  @RegressionTest
  Scenario: Add MyInfo Details
    Given User Launch Chrome browser
    When User Opens URL "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"

@@ -1,13 +1,18 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:Feature/pm.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:Feature/myInfo.feature");
 formatter.feature({
-  "name": "PM Details",
+  "name": "MyInfo Details",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Add Employee Details",
+  "name": "Add MyInfo Details",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@RegressionTest"
+    }
+  ]
 });
 formatter.step({
   "name": "User Launch Chrome browser",
@@ -60,31 +65,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Clicks on PM link",
+  "name": "User Clicks on my Info",
   "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefs.user_Clicks_on_PM_link()"
+  "location": "MyStepdefs.user_Clicks_on_my_Info()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Clicks on Add Employee link",
+  "name": "User Clicks on Personal Details link",
   "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefs.user_Clicks_on_Add_Employee_link()"
+  "location": "MyStepdefs.user_Clicks_on_Personal_Details_link()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters Employee Details",
+  "name": "User enters Personal Details",
   "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefs.user_enters_Employee_Details()"
+  "location": "MyStepdefs.user_enters_Personal_Details()"
 });
 formatter.result({
   "status": "passed"

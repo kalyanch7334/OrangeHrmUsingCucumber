@@ -1,5 +1,6 @@
 Feature: Login With OrangeHrm
 
+  @sanity
   Scenario: Successful Login with OrangeHrmDemo
     Given User Launch Chrome browser
     When User Opens URL "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
